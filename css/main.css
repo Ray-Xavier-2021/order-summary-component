@@ -8,9 +8,6 @@
 body{
     background: hsl(225, 100%, 94%);
     font-family: 'Red Hat Display', sans-serif;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
 }
 
 h3, h5 {
@@ -33,20 +30,20 @@ p {
 
 /*CARD STYLES*/
 .card {
-    border: 1px solid red;
     border-radius: 25px 25px 25px 25px;
     flex-direction: column;
     margin: 70px 25px;
 }
 
-.hero-img-container, img {
+img {
     width: 100%;
     border-radius: 25px 25px 0 0;
 }
 
+
 .card-content {
     background: hsl(225, 100%, 98%);
-    border-radius: 0 0 25px 25px;
+    border-radius: 25px 25px;
 }
 
 .summary {
@@ -65,7 +62,7 @@ p {
 
 .subscription {
     background: hsl(225, 100%, 94%);
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px;
     display: flex;
     justify-content: space-around;
     margin: 25px;
@@ -78,6 +75,12 @@ p {
     height: 50px;
 }
 
+.subscription-plan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .subscription h5,
 .subscription-link {
     font-weight: 900;
@@ -103,6 +106,7 @@ p {
 
 .payment-btn {
     background: hsl(245, 75%, 52%);
+    border-style: none;
     box-shadow: 0px 20px 10px 0px;
     color: hsl(245, 100%, 94%);
     font-weight: 900;
@@ -124,3 +128,16 @@ p {
 .payment-cancel-link:hover {
     color: hsl(223, 47%, 23%);
 }
+
+/*DESKTOP STYLES*/
+
+@media only screen and (max-width: 1440px) {
+    .card-wrapper {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .card {
+        max-width: 375px;
+    }
+  }

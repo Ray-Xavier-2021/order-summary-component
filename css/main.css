@@ -2,13 +2,14 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body{
     background-color: hsl(225, 100%, 94%);
-    background: url(/images/pattern-background-mobile.svg);
     font-family: 'Red Hat Display', sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 p {
@@ -22,4 +23,21 @@ p {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+/*CARD STYLES*/
+.card {
+    background-image: url(/images/illustration-hero.svg);
+    border: 1px solid red;
+    border-radius: 25px 25px 25px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 70px 25px;
+}
+
+.hero-img-container, img {
+    width: 100%;
+    border-radius: 25px 25px 0 0;
 }
